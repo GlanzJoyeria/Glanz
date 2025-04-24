@@ -492,3 +492,42 @@ top: 0px;
   font-family: 'Vercetti';
 
 }
+
+
+/* Ajustes solo para celulares */
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-left, .nav-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-center img {
+    height: 30px;
+  }
+
+  body {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  section, article, .content, .main {
+    width: 100% !important;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
