@@ -8,6 +8,8 @@ body {
     --primary-color: white;
 	background-color: #ffffff;
     --dark-color:#000000;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /**Menú de navegación**/
@@ -495,3 +497,269 @@ top: 0px;
 
 
 
+
+
+
+
+
+
+
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 768px       */
+/* ********************************** */
+/* Pantallas pequeñas: celulares */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-left,
+  .nav-right {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .nav-left{
+    margin-left: -20rem;
+  }
+  .nav-right{
+    margin-right: -13rem;
+    margin-top: -3rem;
+  }
+  .nav-left i,
+  .nav-right a {
+    font-size: 1.2rem;
+  }
+  .nav-center {
+    display: none;
+  }
+
+  .gallería {
+    width: 100vw;
+    height: 25rem;
+    margin-left: 0;
+  }
+
+  .logotipo {
+    top: 13rem;
+    left: 7rem;
+    width: 50vw;
+    height: 7em;
+  }
+
+  .texto {
+    margin-top: -19rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .texto h1 {
+    font-size: 1.5rem;
+  }
+
+  .texto h2 {
+    font-size: 1rem;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .img3, .img6 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .agendiseno {
+    flex-direction: column;
+  }
+
+  .diseno img,
+  .agenda img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mis,
+  .vis,
+  .v {
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+  .mis img,
+  .vis img,
+  .v img {
+    width: 80%;
+    height: auto;
+  }
+
+  .footer {
+    padding: 3rem 1rem;
+  }
+
+  .foo2 {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .foo2 .logo img {
+    width: 200px;
+    margin-left: 3rem;
+
+  }
+
+  .foo2 .empresa,
+  .foo2 .ayuda {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-left: 2.5rem;
+  }
+  .foo2 .empresa{
+    margin-left: 4.5rem;
+
+  }
+  .gallería {
+    background-color: transparent;
+    width: 100vw;
+    height: 140vw;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Pantallas medianas: tabletas */
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-left,
+  .nav-right {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .nav-left {
+    margin-left: -10rem;
+  }
+
+  .nav-right {
+    margin-right: -8rem;
+    margin-top: -2rem;
+  }
+
+  .nav-left i,
+  .nav-right a {
+    font-size: 1.3rem;
+  }
+
+  .nav-center {
+    display: none;
+  }
+
+  .gallería {
+    width: 100vw;
+    height: 30rem;
+    margin-left: 0;
+    background-color: transparent;
+  }
+
+  .logotipo {
+    top: 12rem;
+    left: 10rem;
+    width: 35vw;
+    height: 8em;
+  }
+
+  .texto {
+    margin-top: -17rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+
+  .texto h1 {
+    font-size: 2rem;
+  }
+
+  .texto h2 {
+    font-size: 1.2rem;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .img3, .img6 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .agendiseno {
+    flex-direction: column;
+  }
+
+  .diseno img,
+  .agenda img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mis,
+  .vis,
+  .v {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mis img,
+  .vis img,
+  .v img {
+    width: 70%;
+    height: auto;
+  }
+
+  .footer {
+    padding: 4rem 2rem;
+  }
+
+  .foo2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .foo2 .logo img {
+    width: 250px;
+    margin-bottom: 2rem;
+  }
+
+  .foo2 .empresa,
+  .foo2 .ayuda {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+}
