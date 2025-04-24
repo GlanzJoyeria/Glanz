@@ -494,40 +494,52 @@ top: 0px;
 }
 
 
-/* Ajustes solo para celulares */
+/* ===================== Responsive solo en celulares ===================== */
 @media (max-width: 767px) {
   header {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 10px 20px;
   }
 
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+
   nav {
+    display: none;
     flex-direction: column;
-    gap: 10px;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 1000;
   }
 
-  .nav-left, .nav-right {
+  nav.active {
+    display: flex;
+  }
+
+  .nav-left,
+  .nav-right {
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    gap: 15px;
   }
 
-  .nav-center img {
-    height: 30px;
-  }
-
-  body {
-    font-size: 14px;
-    padding: 0 10px;
-  }
-
-  section, article, .content, .main {
-    width: 100% !important;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
+  .nav-center {
+    display: none; /* Si no necesitas mostrar el logo aquí también */
   }
 }
