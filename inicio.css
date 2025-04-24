@@ -494,7 +494,6 @@ top: 0px;
 }
 
 
-/* ===================== Responsive solo en celulares ===================== */
 @media (max-width: 767px) {
   header {
     flex-direction: row;
@@ -540,6 +539,6 @@ top: 0px;
   }
 
   .nav-center {
-    display: none; /* Si no necesitas mostrar el logo aquí también */
+    display: none;
   }
 }
