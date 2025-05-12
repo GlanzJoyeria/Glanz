@@ -131,14 +131,14 @@ top: 0px;
 }
 /**Imagenes**/
 .gallería {
-    background-image: linear-gradient(100deg, #5c533f50, #b3b0b0de),
-        url('IMAGENES/Glanz-Inicio-Joya.png');
+    background-image: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%),
+        url('https://i.pinimg.com/736x/fd/d7/7d/fdd77d6d2bc365d15ffbf52d210cabf7.jpg');
     height: 37rem;
     background-size: cover;
     background-position: center;
     width: 40vw;
     margin-left: auto;
-    padding-right: 0px; 
+    padding-right: 1px; 
     background-color: var(--dark-color);
 }
 .logotipo {
